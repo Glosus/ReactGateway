@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  margin: 0px;
+  height: 100%;
+}
+.wrapper{
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.forms{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0px;
+  padding: 10px;
+  width: 32%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: #f8f8f8;
+}
+input{
+  width: 64px;
+  text-align: center;
+}
+#checkbox{
+  width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+p{
+  margin: 8px 0px;
+}
+#output{
+  margin: 20px 0px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  outline: none;
+  resize: none;
+}

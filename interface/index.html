@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Gateway tester</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript" src="scripts.js" ></script>
+</head>
+<body onload="init()">
+  <div class="wrapper">
+    <textarea name="output" id="output" readonly></textarea>
+    <div class="forms">
+      <form id="get_items" method="GET">
+        <p>Get items:
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+      <form id="get_item_by_id" method="GET">
+        <p>Get item by id:
+        <p><input type="text" name="id" placeholder="id">
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+      <form id="create_item" method="POST">
+        <p>Create item:
+        <p><input type="text" name="name" placeholder="name"> - <input type="text" name="amount" placeholder="amount">
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+      <form id="add_existing_items" method="PUT">
+        <p>Add existing items:
+        <p><input type="text" name="id" placeholder="id"> - <input type="text" name="amount" placeholder="amount">
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+      <form id="get_orders" method="GET">
+        <p>Get orders:
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+      <form id="get_order_by_id" method="GET">
+        <p>Get order by id:
+        <p><input type="text" name="id" placeholder="id">
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+      <form id="add_item_to_order" method="PUT">
+        <p>Add item to order:
+        <p><input type="text" name="id" placeholder="id">
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+      <form id="perform_payment" method="PUT">
+        <p>Perform payment:
+        <p><input type="text" name="id" placeholder="id"> - <input type="text" name="username" placeholder="name"> - <input id="checkbox" type="checkbox" name="auth">
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+      <form id="change_order_statust" method="PUT">
+        <p>Change order status:
+        <p><input type="text" name="id" placeholder="id"> - <input type="text" name="status" placeholder="status">
+        <p><input type="submit" name="submit" value="Send">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
